@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro blog</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font/flaticon.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+
+</head>
+<body>
+    <header>
+        <section class="header-icons-container">   
+            <div class="  icons">
+                <a href="/"><span class="flaticon-001-facebook"></span></a>
+                <a href="/"><span class="flaticon-002-twitter"></span></a>
+                <a href="/"><span class="flaticon-011-instagram"></span></a>
+                <a href="/"><span class="flaticon-010-linkedin"></span></a>
+                <a href="/"><span class="flaticon-008-youtube"></span></a>
+            </div>
+        </section>
+
+        <nav>
+            <section class="nav-logo-container">
+                <a href="./index.html"> <img src="./assets/img//logoPortafolioII.png" alt="Logo de mi portafolio"></a>
+            </section>
+            <section class="profile-link">
+            </section>
+        </nav>
+    </header>
+
+    <main class="blog-main">
+       <section class=" grid-container blogpost-img-container">
+           <img src="./assets/img/imgRoommates.png" alt="">
+       </section>
+
+       
+        <section class="blogpost-main-container">
+           <div class="grid-container">
+               <h3>Proyecto 3</h3>
+               <article >
+                <h1>Desarrollo de Aplicaciones Web Node Express <br> API RESTful (Roommates)</h1>
+                <h4>Objetivo</h4>
+                <p>Manipular archivos con File System, manejar errores, construir una API RESTful, manejar
+                    códigos de estado HTTP y utilizar paquetes de npm.</p>
+                <h4>Análisis y reflexión del proceso de resolución</h4>
+                <p>Primero se definió la estructura que llevarían los JSON para roommates y gastos con las
+                    propiedades de cada objeto. Se utilizó Express para crear un servidor con distintas rutas
+                    disponibles, a las cuales más tarde se le asignarían las funciones creadas para que el
+                    usuario pueda interactuar con los JSON mediante la interfaz en HTML. Se crearon
+                    funciones que permiten usar Axios para consultar una API de Random User para crear un
+                    roommate con una UUID generada aleatoriamente, información que fue escrita en formato
+                    JSON utilizando File System en NodeJS y se disponibiliza una ruta de Express para que el
+                    JSON pueda ser consumido y mostrado de forma dinámica desde el HTML. Otras funciones
+                    permiten editar el JSON para agregar nuevos roommates o modificar la información
+                    existente. Para los gastos, se posibilitó que el usuario asigne un gasto para cada roommate
+                    con input capturado desde el frontend una vez cargada la lista de roommates, y además se
+                    agregaron funciones que calculan el monto que cada roommate debe de forma dinámica
+                    según vayan surgiendo o eliminando nuevas personas o gastos.</p> 
+               </article>
+               <a href="#">Repositorio del proyecto(click)</a>
+           </div>
+        </section>
+
+       <section class="contact-main-container">
+           <div class= grid-container>
+               <img src="./assets/img/013-newsletter.png" alt="">
+               <div class="contact-left">
+                    <a href="">Visítanos en GitHub</a>
+                    <p>@mpfuent</p>
+                    <p>@riujun</p>
+                    <p>@MichaelPizarro</p>
+                    <p>@Alexandra-Aguilar</p>
+               </div>
+           </div>   
+
+           <div class="grid-container" >
+               <img src="./assets/img/006-like.png" alt="">
+               <div class="contact-right">
+                    <a href="">Escribe</a>
+                    <p>mariapazfuent@gmail.com</p>
+                    <p>fabi.ignacio1998@gmail.com</p>
+                    <p>michael.pizarro.l@gmail.com</p>
+                    <p>giohanna.23@gmail.com</p>
+                <p>Escribenos por consultas o sugerencias de temas.</p>
+               </div>
+           </div>
+       </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2022 </p>
+    </footer>
+</body>
+</html>

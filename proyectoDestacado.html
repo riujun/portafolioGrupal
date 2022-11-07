@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro blog</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font/flaticon.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+
+</head>
+<body>
+    <header>
+        <section class="header-icons-container">   
+            <div class="  icons">
+                <a href="/"><span class="flaticon-001-facebook"></span></a>
+                <a href="/"><span class="flaticon-002-twitter"></span></a>
+                <a href="/"><span class="flaticon-011-instagram"></span></a>
+                <a href="/"><span class="flaticon-010-linkedin"></span></a>
+                <a href="/"><span class="flaticon-008-youtube"></span></a>
+            </div>
+        </section>
+
+        <nav>
+            <section class="nav-logo-container">
+                <a href="./index.html"> <img src="./assets/img//logoPortafolioII.png" alt="Logo de mi portafolio"></a>
+            </section>
+            <section class="profile-link">
+            </section>
+        </nav>
+    </header>
+
+    <main class="blog-main">
+       <section class=" grid-container blogpost-img-container">
+           <img src="./assets/img/imgProyectoDestacadoAPIREST.png" alt="">
+       </section>
+
+       
+        <section class="blogpost-main-container">
+           <div class="grid-container">
+               <h3>Proyecto Destacado</h3>
+               <article >
+                <h1>Implementación de API BackEnd Node Express</h1>
+                <H4>Objetivo</H4>
+                 <p>Crear una API REST con el Framework Express, servir contenido dinámico con
+                    express-handlebars, ofrecer la funcionalidad Upload File con express-fileupload,
+                    implementar seguridad y restricción de recursos o contenido con JWT.</p>
+                <h4>Análisis y reflexión del proceso de resolución</h4>
+                <p>La aplicación permite que los usuarios ingresen input desde el frontend, que es capturado y
+                    enviado al backend por medio de peticiones POST para utilizarse en queries que permiten
+                    realizar registros y modificaciones en la base de datos. Para este proyecto se utilizó
+                    NodeJS, lo que permitió el uso de los paquetes Express para levantar un servidor con las
+                    rutas requeridas destinadas a cada función. Como en los proyectos anteriores, se accedió a
+                    la base de datos y se disponibiliza un JSON que permite mostrar de forma dinámica la
+                    información en una página de HTML. Se utilizó el npm de Postgres para acceder a la base
+                    de datos y realizar las queries que permiten agregar, modificar o eliminar usuarios. La
+                    función de registro cuenta además con el uso de File Upload para guardar la url de la
+                    imagen de cada usuario. Se implementó Handlebars para manejar las vistas del HTML al
+                    enviar ciertas respuestas al usuario luego de realizar las distintas queries. Se implementó
+                    una función de inicio de sesión que busca en la base de datos una coincidencia del email y
+                    contraseña ingresados y, al tener éxito, crea un token de JWT para autenticar al usuario y
+                    otorgarle acceso a una planilla que permite modificar sus datos.</p> 
+               </article>
+               <a href="#">Repositorio del proyecto(click)</a>
+           </div>
+        </section>
+
+       <section class="contact-main-container">
+           <div class= grid-container>
+               <img src="./assets/img/013-newsletter.png" alt="">
+               <div class="contact-left">
+                   <a href="">Visítanos en GitHub</a>
+                   <p>@mpfuent</p>
+                   <p>@riujun</p>
+                   <p>@MichaelPizarro</p>
+                   <p>@Alexandra-Aguilar</p>
+               </div>
+           </div>   
+
+           <div class="grid-container" >
+               <img src="./assets/img/006-like.png" alt="">
+               <div class="contact-right">
+                   <a href="">Escribe</a>
+                   <p>mariapazfuent@gmail.com</p>
+                   <p>fabi.ignacio1998@gmail.com</p>
+                   <p>michael.pizarro.l@gmail.com</p>
+                   <p>giohanna.23@gmail.com</p>
+                   <p>Escribenos por consultas o sugerencias de temas.</p>
+               </div>
+           </div>
+       </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2022</p>
+    </footer>
+</body>
+</html>
