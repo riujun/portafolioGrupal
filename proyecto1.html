@@ -1,96 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuestro blog</title>
-    <link rel="stylesheet" href="./font/css/main.css">
-    <link rel="stylesheet" href="./font/flaticon.css">
-    <link rel="stylesheet" href="./font/css/media-queries.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./font/css/main.css" />
+    <link rel="stylesheet" href="./font/flaticon.css" />
+    <link rel="stylesheet" href="./font/css/media-queries.css" />
+  </head>
+  <body>
     <header>
-        <section class="header-icons-container">   
-            <div class="  icons">
-                <a href="/"><span class="flaticon-001-facebook"></span></a>
-                <a href="/"><span class="flaticon-002-twitter"></span></a>
-                <a href="/"><span class="flaticon-011-instagram"></span></a>
-                <a href="/"><span class="flaticon-010-linkedin"></span></a>
-                <a href="/"><span class="flaticon-008-youtube"></span></a>
-            </div>
-        </section>
+      <section class="header-icons-container">
+        <div class="icons">
+          <a href="/"><span class="flaticon-001-facebook"></span></a>
+          <a href="/"><span class="flaticon-002-twitter"></span></a>
+          <a href="/"><span class="flaticon-011-instagram"></span></a>
+        </div>
+      </section>
 
-        <nav>
-            <section class="nav-logo-container">
-                <a href="./index.html"> <img src="./assets/img//logoPortafolioII.png" alt="Logo de mi portafolio"></a>
-            </section>
-            <section class="profile-link">
-            </section>
-        </nav>
+      <nav>
+        <section class="nav-logo-container">
+          <a href="./index.html">
+            <img
+              src="./assets/img//logoPortafolioII.png"
+              alt="Logo de mi portafolio"
+          /></a>
+        </section>
+        <section class="profile-link"></section>
+      </nav>
     </header>
 
     <main class="blog-main">
-       <section class=" grid-container blogpost-img-container">
-           <img src="./assets/img/imgBancoSolar.png" alt="imagen banco solar">
-       </section>
+      <section class="grid-container blogpost-img-container">
+        <img src="./assets/img/imgBancoSolar.png" alt="imagen banco solar" />
+      </section>
 
-       
-        <section class="blogpost-main-container">
-           <div class="grid-container">
-               <h3>Proyecto 1</h3>
-               <article >
-                <h1>Acceso a Datos en Aplicaciones Node <br> Transferencias bancarias (Banco Solar)</h1>
-                <h4>Objetivo</h4>
-                <p>Conectar una base de datos PostgreSQL con Node, realizar consultas DML con Node y el
-                    paquete pg, realizar consultas TCL con Node y el paquete pg, construir una API RESTful
-                    utilizando PostgreSQL para la persistencia de datos, manejar errores y manejar códigos de
-                    estado HTTP.</p>
-                <h4>Análisis y reflexión del proceso de resolución</h4>
-                <p>Utilizando NodeJS se creó un servidor Express con módulos que disponibiliza distintas rutas
-                    destinadas a cumplir las funciones que permitirían añadir usuarios y registrar transferencias
-                    a la base de datos del banco. Se utilizó el ORM Sequelize para crear modelos que facilitan
-                    la creación de tablas, la inserción de información y la realización de queries al conectarse
-                    con Postgres. Las queries principales consisten, por una parte, en disponibilizar un JSON
-                    con la base de datos con el fin de mostrar los usuarios en el index de forma dinámica, y por
-                    otra parte, en realizar transferencias de dinero al seleccionar un usuario emisor y un
-                    receptor. Se utilizaron transacciones para asegurar que la operación sea abortada si existen
-                    errores. Esta transacción incluye la modificación del balance existente para ambos usuarios,
-                    junto con la inserción de un nuevo registro en la tabla de transferencias.</p> 
-               </article>
-               <a href="https://github.com/MichaelPizarro/BancoSolar">Repositorio del proyecto(click)</a>
-           </div>
-        </section>
+      <section class="blogpost-main-container">
+        <div class="grid-container">
+          <h3>Proyecto 1</h3>
+          <article>
+            <h1>
+              Acceso a Datos en Aplicaciones Node <br />
+              Transferencias bancarias (Banco Solar)
+            </h1>
+            <h4>Objetivo</h4>
+            <p>
+              Conectar una base de datos PostgreSQL con Node, realizar consultas
+              DML con Node y el paquete pg, realizar consultas TCL con Node y el
+              paquete pg, construir una API RESTful utilizando PostgreSQL para
+              la persistencia de datos, manejar errores y manejar códigos de
+              estado HTTP.
+            </p>
+            <h4>Análisis y reflexión del proceso de resolución</h4>
+            <p>
+              Utilizando NodeJS se creó un servidor Express con módulos que
+              disponibiliza distintas rutas destinadas a cumplir las funciones
+              que permitirían añadir usuarios y registrar transferencias a la
+              base de datos del banco. Se utilizó el ORM Sequelize para crear
+              modelos que facilitan la creación de tablas, la inserción de
+              información y la realización de queries al conectarse con
+              Postgres. Las queries principales consisten, por una parte, en
+              disponibilizar un JSON con la base de datos con el fin de mostrar
+              los usuarios en el index de forma dinámica, y por otra parte, en
+              realizar transferencias de dinero al seleccionar un usuario emisor
+              y un receptor. Se utilizaron transacciones para asegurar que la
+              operación sea abortada si existen errores. Esta transacción
+              incluye la modificación del balance existente para ambos usuarios,
+              junto con la inserción de un nuevo registro en la tabla de
+              transferencias.
+            </p>
+          </article>
+          <a href="https://github.com/MichaelPizarro/BancoSolar"
+            >Repositorio del proyecto(click)</a
+          >
+        </div>
+      </section>
 
-       <section class="contact-main-container">
-           <div class= grid-container>
-               <img src="./assets/img/013-newsletter.png" alt="">
-               <div class="contact-left">
-                <a href="">Visítanos en GitHub</a>
-                <p>@mpfuent</p>
-                <p>@riujun</p>
-                <p>@MichaelPizarro</p>
-                <p>@Alexandra-Aguilar</p>
-               </div>
-           </div>   
+      <section class="contact-main-container">
+        <div class="grid-container">
+          <img src="./assets/img/013-newsletter.png" alt="" />
+          <div class="contact-left">
+            <a href="">Visítanos en GitHub</a>
+            <p>@riujun</p>
+          </div>
+        </div>
 
-           <div class="grid-container" >
-               <img src="./assets/img/006-like.png" alt="">
-               <div class="contact-right">
-                    <a href="">Escribe</a>
-                    <p>mariapazfuent@gmail.com</p>
-                    <p>fabi.ignacio1998@gmail.com</p>
-                    <p>michael.pizarro.l@gmail.com</p>
-                    <p>giohanna.23@gmail.com</p>
-                   <p>Escribenos por consultas o sugerencias de temas.</p>
-               </div>
-           </div>
-       </section>
+        <div class="grid-container">
+          <img src="./assets/img/006-like.png" alt="" />
+          <div class="contact-right">
+            <a href="">Escribe</a>
+            <p>mariapazfuent@gmail.com</p>
+            <p>fabi.ignacio1998@gmail.com</p>
+            <p>michael.pizarro.l@gmail.com</p>
+            <p>giohanna.23@gmail.com</p>
+            <p>Escribenos por consultas o sugerencias de temas.</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Copyright © 2022</p>
+      <p>Copyright © 2022</p>
     </footer>
-</body>
+  </body>
 </html>
